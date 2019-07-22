@@ -7,13 +7,15 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class AdminController {
 	
-	@GetMapping("/login")
-	public ModelAndView loginCheck()
-	{
-		ModelAndView mv = new ModelAndView("sucess");
+		@GetMapping("/login")
+		public ModelAndView loginCheck()
+		{
+			ModelAndView mv = new ModelAndView("sucess");
+			
+			mv.addObject("mykey", "myValue");
+			return mv;
+		}
 		
-		mv.addObject("mykey", "myValue");
-		return mv;
-	}
+		
 
 }
