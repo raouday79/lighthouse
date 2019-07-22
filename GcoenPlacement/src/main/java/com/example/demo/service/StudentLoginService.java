@@ -27,9 +27,7 @@ public class StudentLoginService {
 		CriteriaBuilder builder = entityManager.getCriteriaBuilder();
 		CriteriaQuery<StudentLoginEntity> query = builder.createQuery(StudentLoginEntity.class);
 		
-		
-				
-		
+	
 		return entity;
 	}
 
